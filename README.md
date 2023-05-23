@@ -1,3 +1,8 @@
+![Screenshot 2023-05-23 205601](https://github.com/Mustansir-M/Xiv/assets/102173635/09c360b7-6747-4c8d-9a46-b7c037d1d320)
+
+
+![Screenshot 2023-05-23 205631](https://github.com/Mustansir-M/Xiv/assets/102173635/14533fd3-8bcf-40d1-a8cf-ab487adb57b2)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
