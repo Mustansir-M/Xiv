@@ -1,0 +1,178 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 2px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  min-height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+
+.navbar-left img{
+  height: 65px;
+  
+
+}
+
+/* .logo {
+  width: 60px;
+  height: auto;
+} */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 70px;
+  gap: 10px;
+}
+
+.navbar-link:hover{
+  color: #233d69;
+}
+
+.navbar-link{
+  position: relative;
+  margin-left: 20px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 18px;
+  font-weight: normal;
+  
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-link:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  margin-bottom: 5px;
+  padding: 5px;
+  color: #333;
+  cursor: pointer;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 10px;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 5px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.talk-button {
+  padding: 0.7rem 1.1rem;
+  color: #2272fb;
+  background-color: #ffffff;
+  border: 2px solid hsl(218, 96%, 56%) ;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.talk-button:hover{
+  animation-name: shine-talk;
+  animation-duration: 250ms;
+}
+
+@keyframes shine-talk  {
+  
+  0% {
+    background: linear-gradient(
+      30deg, 
+      hsl(218, 96%, 56%) 0%, 
+      hsl(0, 0%, 100%) 25%
+    );
+  }
+
+  25% {
+    background: linear-gradient(
+      30deg, 
+      hsl(0, 0%, 100%) 0%, 
+      hsl(218, 96%, 56%) 25%, 
+      hsl(0, 0%, 100%) 50%);
+  }
+
+  50% {
+    background: linear-gradient(
+      30deg,
+      hsl(0, 0%, 100%) 0%, 
+      hsl(218, 96%, 56%) 50%, 
+      hsl(0, 0%, 100%) 75%); 
+  }
+
+  75% {
+    background: linear-gradient(
+      30deg, 
+      hsl(0, 0%, 100%) 0%, 
+      hsl(218, 96%, 56%) 75%, 
+      hsl(0, 0%, 100%) 100%); 
+  }
+
+  100% {
+    background: linear-gradient(
+      30deg, 
+      hsl(0, 0%, 100%) 0%, 
+      hsl(218, 96%, 56%) 100%); 
+  }
+} 
+
+/* Additional styles to customize the appearance */
+
+
+
+
+
+
+
+
+
+

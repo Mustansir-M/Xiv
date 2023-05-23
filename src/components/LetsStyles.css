@@ -1,0 +1,271 @@
+*{
+  
+  margin: 0;
+  padding: 0;
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.services p:hover {
+    color: #555151
+}
+
+.services img {
+    width: 25px;
+    margin-left: 20px
+}
+
+.services img:hover {
+    position: relative;
+    -webkit-animation-name: change-b;
+    animation-name: change-b;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    cursor: pointer
+}
+
+@-webkit-keyframes change-b {
+    0% {
+        left: 15px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes change-b {
+    0% {
+        left: 15px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+} 
+
+
+/* ------------------------------------------------------- */
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(1500px);
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  
+
+.card card-1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+
+}
+
+  .card {
+      display: flex;  
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+  .cardImage {
+    flex: 1;
+    /* text-align: center; */
+    padding: 0;
+  }
+  
+  /* .cardImage img {
+    max-width: 100%;
+    height: auto;
+  } */
+  
+  .heading h2 {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+
+  .info{
+    padding: 50px 0 110px;
+    margin-bottom: 16px;
+  }
+  
+  .info h3 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: 21px;
+    color: #212529;
+  }
+  
+ 
+  .services a {
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: auto;
+    height: auto;
+    text-align: center;
+   justify-content: center;
+  }
+  
+  .services p {
+    display: inline-block;
+    font-weight: bolder;
+    color: black;
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  .services img {
+    width: 25px;
+    margin-left: 20px;
+    height: 100%;
+    /* object-fit: cover; */
+    /* gap: 0; */
+  }
+
+  .cardContent {
+    flex: 1;
+    padding-right: 136px;
+    /* top: 0; */
+  }
+
+  .serviceImage-b{
+    height: 100%;
+    width: 88%;
+    align-items: flex-start;
+    text-align: left;
+    /* line-height: normal; */
+  }
+
+  .cardImage{
+    height: 100%;
+    width: 710px;
+    padding: 0px 15px;
+    /* line-height: 0%; */
+  }
+  .servicesMainDiv{
+    font-family: serif;
+    color: #212529;
+    text-align: left;
+    padding: 5% 3%;
+  }
+
+  
+
+
+.collaborate{
+  padding-top: 100px;
+}
+  .collaborate h4{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #212529;
+    padding:3% 5%;
+    margin: 0;
+  }
+
+
+
+.intouch{
+  padding: 5% 3%;
+  
+}
+
+ .btn{
+  background-color: black;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 2px;
+  padding: 20px 50px;
+  position: relative;
+  border: none;
+  transition: 0.4s ease-in;
+  z-index: 1;
+}
+
+
+
+.btn:hover{
+  animation-name: shine;
+  animation-duration: 250ms;
+  cursor: pointer;
+}
+
+@keyframes shine {
+  
+  0% {
+    background: linear-gradient(
+      30deg, 
+      hsl(260, 85%, 95%) 0%, 
+      hsl(0, 0%, 0%) 25%
+    );
+  }
+
+  25% {
+    background: linear-gradient(
+      30deg, 
+      hsl(0, 0%, 0%) 0%, 
+      hsl(260, 85%, 95%) 25%, 
+      hsl(0, 0%, 0%) 50%);
+  }
+
+  50% {
+    background: linear-gradient(
+      30deg,
+      hsl(0, 0%, 0%) 0%, 
+      hsl(260, 85%, 95%) 50%, 
+      hsl(0, 0%, 0%) 75%); 
+  }
+
+  75% {
+    background: linear-gradient(
+      30deg, 
+      hsl(0, 0%, 0%) 0%, 
+      hsl(260, 85%, 95%) 75%, 
+      hsl(0, 0%, 0%) 100%); 
+  }
+
+  100% {
+    background: linear-gradient(
+      30deg, 
+      hsl(0, 0%, 0%) 0%, 
+      hsl(260, 85%, 95%) 100%); 
+  }
+} 
+
+
+.hr-line{
+  color: black;
+  padding-bottom: 100px;
+  border-top: 2px solid black;
+}
+
+
+
